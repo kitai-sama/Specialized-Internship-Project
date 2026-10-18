@@ -28,3 +28,7 @@ DocConvert/
 1. Tạo môi trường ảo Python
 nên sử dụng py 3.13 cho đồ án thực tập chuyên ngành và đồ án phân tích thiết kế hệ thống
 sau khi tải xong thì ta cài đặt powershell và cài đặt flask
+
+2. 
+di chuyển đến thư mục DocConvert
+và dùng lệnh .\.venv\Scripts\Activate.ps1
