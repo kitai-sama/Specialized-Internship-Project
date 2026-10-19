@@ -33,8 +33,8 @@ sau khi tải xong thì ta cài đặt powershell và cài đặt flask
 2. khởi chạy flask 
 trong terminal của vsc
 di chuyển đến thư mục DocConvert
-và dùng lệnh .\.venv\Scripts\Activate.ps1
-tiếp đến dùng lệnh python App.py để khởi chạy app 
+và dùng lệnh ".\.venv\Scripts\Activate.ps1"
+tiếp đến dùng lệnh "python App.py" để khởi chạy app 
 
 III. Xây dựng chức năng PDF → Word	Chuyển đổi tài liệu thành công
 1. cài thư viện chuyển đổi PDF
