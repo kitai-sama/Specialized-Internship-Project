@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+}
+
+.header {
+    background-color: rgb(195, 218, 201);
+    border-bottom: 1px solid #3e4249;
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: #111827;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.logo span {
+    color: #2563eb;
+}
+
+.menu {
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
+.menu a {
+    color: #374151;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.menu a:hover,
+.menu a.active {
+    color: #2563eb;
+}
+/*===================================================
+================= MOBILE RESPONSIVE =================
+=====================================================*/
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 30px;
+    height: 24px;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Tạo 3 gạch */
+.menu-toggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #111827;
+    border-radius: 3px;
+    transition: 0.3s;
+}
+
+
+/* ==========================
+   GIAO DIỆN MOBILE
+========================== */
+
+@media (max-width: 768px) {
+
+    .header-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    /* Hiển thị nút 3 gạch */
+    .menu-toggle {
+        display: flex;
+    }
+
+    /* Ẩn menu mặc định */
+    .menu {
+        display: none;
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+        width: 100%;
+
+        background-color: rgb(195, 218, 201);
+
+        flex-direction: column;
+        gap: 0;
+
+        padding: 10px 20px;
+
+        border-bottom: 1px solid #3e4249;
+        z-index: 1000;
+    }
+
+    /* Khi nhấn nút 3 gạch */
+    .menu.show {
+        display: flex;
+    }
+
+    /* Các mục trong menu */
+    .menu a {
+        padding: 12px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .menu a:last-child {
+        border-bottom: none;
+    }
+
+    /* Hiệu ứng biến 3 gạch thành dấu X */
+    .menu-toggle.active span:nth-child(1) {
+        transform: translateY(10.5px) rotate(45deg);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-10.5px) rotate(-45deg);
+    }
+}

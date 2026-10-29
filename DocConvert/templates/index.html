@@ -1,57 +1,46 @@
 <!DOCTYPE html>
 <html lang="vi">
-    <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DocConvert - giao diện chuyển đổi tài liệu PDF, Word và hình ảnh.">
+    <meta name="theme-color" content="#5CE65C">
+    <title>Trang web chuyển đổi định dạng trực tuyến không cần đăng nhập DocConvert!!!</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style_header.css') }}">
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+</head>
 
-    <title>DocConvert</title>
-    
-    <link rel="stylesheet"
-          href="../static/css/style.css">
-    </head>
+<body>
+    <!----------------------------------------------------------------------------->
+    <!------------------------------  HEADER  ------------------------------------->
+    <!----------------------------------------------------------------------------->
+    <header class="header">
+        <div class="header-container">
+            <a href="/" class="logo">Doc<span>Convert</span></a>
 
-    <body>
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Mở menu" aria-controls="main-menu"
+                aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
 
-    <div class="container">
+            </button>
 
-        <h1>DocConvert</h1>
-
-        <h2>Website chuyển đổi tài liệu trực tuyến</h2>
-
-        <p>Chuyển đổi PDF, Word và hình ảnh dễ dàng.</p>
-
-        <button onclick="alert('Website Flask hoạt động thành công!')">
-            Kiểm tra website
-        </button>
-
-    </div>
-
-
-    <!----------------------------------------------------------->
-    <!-- HEADER -->
-    <!----------------------------------------------------------->
-    <header>
-
+            <nav class="menu" id="main-menu">
+                <a href="/" class="active">Trang Chủ</a>
+                <a href="#cong-cu">Công Cụ</a>
+                <a href="#huong-dan">Hướng Dẫn</a>
+                <a href="#cau-hoi">Câu Hỏi Thường Gặp</a>
+                <a class="nav-cta" href="#chuyen-doi">Bắt đầu ngay
+                    <span aria-hidden="true">↗</span></a>
+            </nav>
+        </div>
     </header>
 
 
 
-    <!----------------------------------------------------------->
-    <!-- MAIN -->
-    <!----------------------------------------------------------->
-    <main>
 
-    </main>
+</body>
 
-
-
-    <!----------------------------------------------------------->
-    <!-- FOOTER -->
-    <!----------------------------------------------------------->
-    <footer>
-
-    </footer>
-
-        <script ></script>
-    </body>
 </html>
