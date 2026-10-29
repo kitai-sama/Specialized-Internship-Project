@@ -7,23 +7,37 @@ Trước tiên, chúng ta chia dự án thành 5 giai đoạn:
 5	Hoàn thiện giao diện, kiểm thử và viết báo cáo	Đồ án hoàn chỉnh
 
 sơ đồ cấu trúc làm :
-DocConvert/
+Specialized Internship Project/
 │
-├── .venv/
+├── .git/
 │
-├── app.py
+├── DocConvert/
+│   │
+│   ├── .venv/
+│   │
+│   ├── App.py
+│   │
+│   ├── static/
+│   │   ├── css/
+│   │   │   └── style.css
+│   │   │
+│   │   ├── images/
+│   │   │
+│   │   └── js/
+│   │       └── main.js
+│   │
+│   └── templates/
+│       └── index.html
 │
-├── templates/
-│   └── index.html
-│
-└── static/
-    ├── css/
-    │   └── style.css
-    │
-    ├── js/
-    │   └── main.js
-    │
-    └── images/
+└── README.txt
+
+Thành phần	
+Môi trường Python .venv	
+Backend App.py	
+Giao diện index.html	
+CSS style.css	
+JavaScript main.js
+Thư mục hình ảnh
 
 II. Thiết lập môi trường và tạo website Flask	Website chạy trên localhost
 Tạo môi trường ảo Python
